@@ -1,0 +1,113 @@
+/* start global rules  */
+
+* { box-sizing: border-box;
+}
+body {
+    background-color: hsl(0, 0%, 8%);
+}
+
+.inter-400 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.inter-600 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600 ;
+}
+
+.inter-700 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* end global rules  */
+
+.social_links_profile {
+    background-color: hsl(0, 0%, 12%);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    
+    
+}
+.profile {
+    display: flex;
+    justify-content: center;
+} 
+.image_profile {
+    width: 100px;
+    height: 100px;
+}
+img {
+    max-width: 100%;
+    border-radius: 100%;
+   
+}
+.text {
+    text-align: center;
+    
+}
+h3 {
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+    
+}
+p{
+    font-size: 14px;
+    color: hsl(75, 94%, 57%);
+}
+.social_links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    
+    
+}
+.content_links {
+    flex-basis: 40px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content_links:not(.content_links:first-child) {
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    border-radius: 10px;
+}
+.content_links:not(.content_links:first-child):hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+}
+.content_links:first-child {
+    color: white;
+    padding: 10px 20px 0;
+}
+
+@media (max-width:576px) {
+    .social_links_profile { padding: 20px;}
+    .image_profile {width: 50px;
+                    height: 50px;}
+    h3 {font-size: 13px;
+     }
+    p {font-size: 10px }
+    .social_links { gap: 10px;}
+    .content_links.content_links:not(.content_links:first-child){ font-size: 12px ;
+    }
+    .content_links:first-child {
+        padding: 0;
+        font-size: 10px;
+    }
+}
